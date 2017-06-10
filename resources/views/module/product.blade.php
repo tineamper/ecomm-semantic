@@ -12,7 +12,7 @@
 									<i class="write square big icon"></i>
 								</div>
 
-									<form id = "form" action="javascript:controlaction()">	
+									<form id = "form" action="javascript:controlaction()" enctype="multipart/form-data">	
 					
 									<div class = "labelpane">
 

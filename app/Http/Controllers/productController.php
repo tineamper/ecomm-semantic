@@ -80,26 +80,30 @@ class productController extends Controller
 
     public function loadphoto($photo) {
 
-		$trimfilestring = explode(';', $photo);
-		$ext = substr($trimfilestring[0], strpos($trimfilestring[0], "/") + 1);
-	//	$base64string = substr($trimfilestring[1], strpos($trimfilestring[1], ",") + 1);
+	// 	$trimfilestring = explode(';', $photo);
+	// 	$ext = substr($trimfilestring[0], strpos($trimfilestring[0], "/") + 1);
+	// //	$base64string = substr($trimfilestring[1], strpos($trimfilestring[1], ",") + 1);
 
-		//$decodephoto = base64_decode($base64string);
+	// 	//$decodephoto = base64_decode($base64string);
 
-		$filename =  public_path("displayphoto/" . str_random() . "." . $ext);
+	// 	$filename =  asset("displayphoto/" . str_random() . "." . $ext);
 
-		//file_put_contents($filename, $decodephoto);
+	// 	//file_put_contents($filename, $decodephoto);    
+	// 	return $filename;
+	// 	//Storage::disk('public')->put($filename, $decodephoto);		
+	// 	//return asset(Storage::disk('public')->url($filename));
 
-    return asset($filename);
-		//return $filename;
-		//Storage::disk('public')->put($filename, $decodephoto);
+      $imageName = mt_rand(999,999999)."_".time()."_".$photo->getClientOriginalExtension();
+            //$type = $request->image->guessClientExtension();
+            $photo->move(('displayphoto/'), $imageName);
+            $imagePath = asset('/public/displayphoto/')."/".$imageName;
+            return $imagePath;
 
-		
-		//return asset(Storage::disk('public')->url($filename));
 	}//loadphoto
 
 
-
+   
+            
 
 }////eeeeeeeeeeeeeennnnnnnnnnnnnnnnndddddddddd
 
