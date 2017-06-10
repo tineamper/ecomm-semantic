@@ -11,6 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'moduleController@phome');
+Route::get('home', 'moduleController@home');
+
+//CATEGORIES [ADD CATEGORIES]
+Route::get('category','categoriesController@index_categories');
+Route::post('module/categoriesCRUD','categoriesController@categoriesCRUD');
+
+//CATEGORIES [ADD PRODUCTS]
+Route::get('product','productController@index_product');
+Route::post('module/productCRUD','productController@productCRUD');
+Route::resource('module/retrieveData','productController@retrieveData');
+Route::post('module/product', 'productController@find');

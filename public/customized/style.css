@@ -1,0 +1,455 @@
+body{
+	width:100%;
+	background-color: #ebebeb;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.containerPC{
+	margin: 0 auto;
+	padding: 0;
+	width:100%;	
+}
+
+.upperNav{
+	background-color: #00253a;
+	width: 100%;	
+	height: 65px;
+}
+
+.title{
+	color:white;
+	font-weight: bold;
+	font-family: "century gothic";
+	float: left;
+    height: 60px;
+    padding: 17px 15px;
+    font-size: 21px;
+    line-height: 20px;
+}
+
+ .linkStyle{
+	text-decoration: none;
+}
+
+ul{
+	display: inline-block;
+	margin: 0;
+	overflow: hidden;
+}
+
+ul li.selected{
+	display: inline-block;
+	float: left;
+	list-style: none;
+	color:white;
+	font-family: "century gothic";
+	height: 60px;
+    padding: 17px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.links{
+	float:right;
+}
+
+ul li.selected:hover{
+	font-weight: bold;
+	background-color: white;
+	color:#00253a;
+	font-size:18.5px;
+	height:65px;
+}
+
+.logo{
+	float: left;
+	height: 90%;
+	width: 6%;
+	padding: 0.5%;
+}
+
+.mainbody {
+	min-height: 100%;
+	width: 100%;
+	height: auto;
+	padding-bottom: 1%;
+}
+
+.homePhoto{
+	width:96%;
+	height:auto;
+}
+
+.panelStyle{
+	width:30%;
+	margin-left: 2%;
+	margin-top: 5%;
+}
+
+.panelStyle2{
+	float: left;
+	width:55%;
+	margin-left: 40%;
+	margin-top: -20%;
+}
+
+.lbel{
+	font-family: "century gothic"
+	font-weight:bold;
+	margin-top: 11%;
+}
+
+.btnNav{
+	margin-top: 5%;
+	float: right;
+}
+
+.headLabel{
+	background-color: lightblue;
+	width:100%;
+	color: black;
+	font-weight: bold;
+	font-family: 'century Gothic';
+	font-size: 18px;
+	padding: 1%;
+}
+
+.tablecon{
+	margin: 2% 0 0 2.5%;
+	width: 90%;
+	height: 98%;
+}
+
+.mtitle, .mhead
+{
+    font-size: 1em;
+    font-weight: bold;
+    color: #00253a;
+    width: 95%;
+    background-color: #ede8e6;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+.mtitle {
+	padding: 0.7em 0em 1.29em 1em;
+}
+
+.labelpane {
+	height: 100%;
+	width: 32%;
+	margin-top: 3%;
+	background-color: #ede8e6;
+	padding: 1% 1% 42% 1%;
+	float:left;
+}
+
+.formlabel {
+	font-weight: bold;
+	color: #00253a;
+	font-family: "Franklin Gothic Book";
+	font-size: 0.9em;
+}
+
+.asterisk {
+	color: red;
+}
+
+.fieldpane {
+	height: 100%;
+	width: 65%;
+	margin-top: 3%;
+	margin-left: 3%;
+	float:left;
+}
+
+
+.ui.tiny.button.savebtnstyle,
+.ui.large.button.savebtnstyle {
+	background-color: #00253a;
+	border: 1px solid  #00253a;
+
+}
+
+.bspacing9 {
+	margin-bottom: 2.3%;
+}
+
+.ui.tiny.button.savebtnstyle:hover,
+.ui.tiny.button.savebtnstyle:active,
+.ui.large.button.savebtnstyle:hover,
+.ui.large.button.savebtnstyle:active {
+	background-color: white;
+	color: #00253a;
+}
+
+.mcontent {
+	margin-top: 2%;
+	margin-left: 1%;
+	height: 100%;
+	width: 98%;
+}
+
+.formpane {
+	min-height: 40%;
+	max-height: 100%;
+	height: auto;
+	overflow: hidden;
+	width: 90%;
+	border-top-left-radius: 0.28571429rem;
+    border-top-right-radius: 0.28571429rem;
+    border-right: 2px solid #ede8e6;
+    border-bottom: 2px solid #ede8e6;
+	border-radius: 1%;
+}
+
+.tablepane {
+	height: 100%;
+	width: 100%;
+	border-radius: 0.28571429rem;
+}
+
+.bspacing2 {
+	margin-bottom: 5%;
+	margin-left: 3%;
+	margin-top: 2%;
+}
+
+.trow:hover, .activerow {
+	color: #62503d;
+    background-color: #faefe3;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.selectstyle2 {
+	width: 15.5em;
+	padding: 0.3em 0.5em;
+}
+
+.fborder, fieldset {
+	border: 1px solid #ede8e6;
+}
+
+.piccon {
+	padding: 3%;
+	border-radius: 0.28571429rem;
+}
+
+.profpic {
+	border-radius: 0.28571429rem;
+	margin-bottom: 1%;
+	width: 97%;
+	height: 170px;
+	object-fit: cover;
+}
+
+.message {
+	color: red;
+	margin-left: 8%;
+}
+
+.textStyle2{
+	color:black;
+	font-weight: bold;
+	font-family: "century gothic";
+	float: left;
+	background-color:#ededed;
+    height: 60px;
+    padding: 17px 15px;
+    font-size: 21px;
+    line-height: 20px;
+}
+
+.ui.horizontal.divider.divtitle{
+	font-family: "Franklin Gothic Book";
+	font-size: 90%;
+	color: #787878;
+
+}
+
+form, .dcon {
+	width: 100%;
+	height: 100%;
+}
+
+.ui.grid.cardlist2 {
+	width: 100%;
+	padding-top: 2%;
+}
+
+.colheight {
+	height: 50%;
+}
+
+.cardstyleportrait {
+	border: 2px solid #ebebeb;
+	width: 100%;
+	min-height: 100px;
+	height: 330px;
+	max-height: 330px;
+	border-radius: 3%;
+	margin-left: 4%;
+}
+
+.advphoto1 {
+	height: 190px;
+	width: 100%;
+	border-top-left-radius: inherit;
+	border-top-right-radius: inherit;
+	object-fit: cover;
+}
+
+.advdata1 {
+	width: 100%;
+	height: 90%;
+	margin: 2% 4% 2% 2%;
+	position:relative;
+	font-family: "Franklin Gothic Book";
+}
+
+.hcontent {
+	width: 98%;
+	margin-top: 1%;
+	min-height: 90%;
+	height: auto;
+}
+
+.name {
+	font-weight: bold;
+	font-family: "century Gothic";
+	font-size: 17.5px;
+	text-align: center;
+}
+
+.p1 {
+	font-family: "verdana";
+	font-size: 13.5px;
+	width: 100%;
+	max-width: 100%;
+	text-align: center;
+	font-weight: bold;
+
+}
+
+.btnProd{
+	background-color: black;
+	color: white;
+	font-weight:bold;
+	font-family: "century gothic"
+	padding:3%;
+}
+
+.btn{
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	border: none;
+  border-radius: 2px;
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  outline: 0;
+  padding: 0 2rem;
+  text-transform: uppercase;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+  color: #fff;
+  background-color: #0097a7;
+  text-align: center;
+  letter-spacing: .5px;
+  transition: .2s ease-out;
+  cursor: pointer;
+}
+
+
+.btn:hover {
+  background-color: #ededed;
+  color: black;
+  font-weight: bold;
+}
+
+#viewadv {
+	background-color: white;
+}
+
+.modalcontent {
+	width: 100%;
+    height: 85%;
+    max-height: 100%;
+    min-height: 85%;
+}
+
+
+.h3name {
+	float:left;
+}
+
+.addbtn {
+	width: 0.25em;
+	height: 0.25em;
+}
+
+.editbtn {
+	width: 0.25em;
+	height: 0.25em;
+	float: right;
+}
+
+.rightrow {
+	height: 48px;
+	margin-left: 21%;
+}
+.disitem {
+	font-weight: bold;
+}
+
+.topmargin {
+	margin-top: 5%;
+}
+
+.fbc {
+	background-color: transparent;
+}
+
+.labelpane {
+	height: 100%;
+	width: 32%;
+	margin-top: 3%;
+	padding: 1% 1% 42% 1%;
+	float:left;
+}
+
+
+.bspacing {
+	margin-bottom: 15%;
+	margin-top: 2%;
+	margin-left: 2%;
+}
+
+.formlabel {
+	font-weight: bold;
+	color: #00253a;
+	font-family: "Franklin Gothic Book";
+	font-size: 18px;
+}
+
+.objfit {
+	border-radius: 0.28571429rem;
+	margin-bottom: 1%;
+	width: 180%;
+	height: 250px;
+	object-fit: cover;
+}
+
+.flt{
+	float: right;
+	margin-top: -40%;
+	margin-left: 80%;
+}
+
+.ui.grid.cardlist2 {
+	width: 100%;
+	padding-top: 2%;
+	float:right;
+}
