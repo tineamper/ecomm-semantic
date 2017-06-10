@@ -12,7 +12,7 @@
 									<i class="write square big icon"></i>
 								</div>
 
-									<form id = "form" action="javascript:controlaction()" enctype="multipart/form-data">	
+									<form id = "form" action="javascript:controlaction()"  enctype="multipart/form-data">	
 					
 									<div class = "labelpane">
 
@@ -174,7 +174,25 @@
 
 <script type="text/javascript">
 
-		var photo = "";
+		$(document).ready(function() {
+		$('#datatable').DataTable();
+		} );
+
+		$('.ui.dropdown').dropdown();
+		$('#select').dropdown();
+
+		function controlaction() {
+		var id = 0;
+		var func = document.getElementById('dualbutton').value;
+
+		CRUD(id, func);
+
+	}//function controlaction() {
+
+	function CRUD(id, func){
+
+			var data;
+			var photo = "";
 			var upphoto = document.getElementsByName('upphoto')[0].files;
 			var blob = new Blob();
 			var blobreader = new FileReader();
@@ -195,25 +213,6 @@
 					photo = event.target.result;
 				}//if
 			}//endBlobReader
-
-		$(document).ready(function() {
-		$('#datatable').DataTable();
-		} );
-
-		$('.ui.dropdown').dropdown();
-		$('#select').dropdown();
-
-		function controlaction() {
-		var id = 0;
-		var func = document.getElementById('dualbutton').value;
-
-		CRUD(id, func);
-
-	}//function controlaction() {
-
-	function CRUD(id, func){
-
-		var data;
 
 		if(func == 1)
 		{

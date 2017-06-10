@@ -23,7 +23,7 @@
 							<div class = "four wide column colheight ">
 								<div class = "cardstyleportrait">
 									@foreach($load as $rs1)	
-										<img class = "advphoto1" src="{{URL::asset('displayphoto/pic.jpg')}}"/>
+										<img class = "advphoto1" src="{{URL::asset($rs1->prd_image)}}"/>
 									
 									<div class = "advdata1">
 										<h5 class = "name">
